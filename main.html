@@ -1,209 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styling2.css">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="F:\WedDev\Porfolio\website\styling.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@400;600;700&family=Rubik+Distressed&family=Zeyada&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-
-    <style>
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    
-    input, textarea {
-      width: 60%;
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      box-sizing: border-box;
-      background-color: beige;
-    }
-    
-    textarea {
-      height: 150px;
-      resize: vertical;
-    }
-    
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    
-    button:hover {
-      background-color: #45a049;
-    }
-
-    </style>
 </head>
-
-    <img class="header3dImg" src="F:\WedDev\Porfolio\DesignLogo_3d.jpg" alt="3D Header">
-
-<body class="bg-gray-50 text-gray-800">
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-
-<!--            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#portfolio" class="text-gray-600 hover:text-gray-900">Portfolio</a></li>
-                    <li><a href="#about" class="text-gray-600 hover:text-gray-900">About</a></li>
-                    <li><a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
-                </ul>
-            </nav> -->
-
+<body>
+    <header>
+    <nav>
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="main2.html">Main Page</a></li>
+            <li><a href="page1.html">Logo Designs</a></li>
+            <li><a href="page2.html">Flyers & Branding Designs</a></li>
+            <li><a href="contact.html">Contact Information</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+    </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
-        <section id="hero" class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">Graphic Design & Creative Solutions</h2>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Transforming ideas into visually stunning designs that,
-                tell a unique story about your company & products.</p>
-        </section>
-
-        <section id="portfolio" class="mb-16">
-            <h3 class="text-3xl font-bold text-center mb-12">My Work</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden relative group">
-                    <img src="F:\WedDev\Porfolio\freshspice4life1.jpg" alt="Spice1" class="spice1">
-                    <img src="F:\WedDev\Porfolio\Khans_Logo.jpg" alt="KFoods" class="kfoods">
-                    <img src="F:\WedDev\Porfolio\breeders_logo.jpg" alt="Breeders" class="breed">
-                    </div>
-
-            <div class="logocap">Logo Designs</div>
-
-        <div class="flyer">
-            <img src="F:\WedDev\Porfolio\Reptile_Expo_4.jpg" alt="Reptile Expo" class="flyer1">
-
-        <div class="logocap">Advertising Designs</div>
-
-            <img src="F:\WedDev\Porfolio\Flyer2.jpg" alt="Spice Flyers" class="flyer2">
-            <img src="F:\WedDev\Porfolio\KhansA5.jpg" alt="Khans" class="flyer3">
-        </div>    
- 
-
-        <div class="aboutme">
-                    <h3 class="logocap"> About Me</h3>
-                    <br>
-                    <p class="aboutmePara">
-                        I'm a passionate graphic designer with 5+ years of experience creating compelling visual
-                        stories.
-                        My work spans brand identity, digital illustration, marketing design, web design and social media management
-                    </p>
-                    <br>
-        </div>
-
-        <div class="branding">
-                <h3 class="logocap"> Company Branding</h3>
-                <br>
-                <img src="F:\WedDev\Porfolio\paperbagMD.jpg" alt="Paper Bag" class="bag">
-                <img src="F:\WedDev\Porfolio\greybomber.jpg" alt="Bomber" class="bomber">
-
-        </div>
-
-            </div>
-            </div>
-        </section>
-
-
-    <section id="replyback">
-            <h3 class="reply">Let me know what do you need?</h3>
-            <br>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-            
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-            
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-            
-                <button type="submit">Send Message</button>
-            </form>
-            
-            <script>
-                document.getElementById('contactForm').addEventListener('submit', function (event) {
-                    event.preventDefault();
-
-                    // Get form values
-                    const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
-                    const message = document.getElementById('message').value;
-
-                    // In a real implementation, you would send these values to a server
-                    
-                    // For now, we'll just show an alert
-                    alert(`Thank you, ${name}! Your message has been received. We'll respond to ${email} soon.`);
-
-                    // Reset the form
-                    this.reset();
-                });
-            </script>
-
-
-    </section>        
+    <div class="container">
+    <div class="scrolling-container">
+        <ul class="scrollpara">
+            <p class="slide-in-text">
+                <b><i>PORTFOLIO </i></b><br>
+                As a passionate and detailed-orientated graphic designer,<br>
+                I specialize visual experiences that connect, inspire, and drive results.<br>
+                With over 5 years of experience spanning brand identity, digital design,<br>
+                and print media, I approach each project as an opportunity to solve<br>
+                problems through thoughtful, strategic design.<br>
+                I'm currently available for freelance projects and potential full-time opportunities.
+            </p>
+        </ul>
+            <img class="head" src="UriahJapan.jpg" alt="3D Logo">
+    </div>
+    </div>
 
 
 
-
-<!--        <section id="contact" class="bg-white shadow-lg rounded-lg p-12">
-            <h3 class="text-3xl font-bold text-center mb-8">Get in Touch</h3>
-            <form class="max-w-xl mx-auto space-y-6">
-                <div>
-                    <label class="block mb-2 text-gray-600">Name</label>
-                    <input type="text" class="w-full p-3 border rounded" placeholder="Your Name">
-                </div>
-                <div>
-                    <label class="block mb-2 text-gray-600">Email</label>
-                    <input type="email" class="w-full p-3 border rounded" placeholder="Your Email">
-                </div>
-                <div>
-                    <label class="block mb-2 text-gray-600">Message</label>
-                    <textarea class="w-full p-3 border rounded" rows="5"
-                        placeholder="Tell me about your project"></textarea>
-                </div>
-                <button class="w-full bg-gray-900 text-white py-3 rounded hover:bg-gray-800">
-                    Send Message
-                </button>
-            </form>
-        </section> -->
-    </main>
-
-    <footer class="bg-gray-900 text-white py-8 text-center">
-        <p>&copy; Designed by Uriah Sanjivygan.</p>
-    </footer>
+    
+<script src="nice.js"></script>
 </body>
-
 </html>
