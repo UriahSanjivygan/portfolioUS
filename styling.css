@@ -12,12 +12,15 @@
 .slide-in-text {
   animation: slideInFromRight 3s ease-in forwards;
   font-size: larger;
-  color: rgb(129, 7, 7);
+  color: rgb(6, 6, 6);
   
 }
 
+@media only screen and (max-width: 768px) and (min-width: 600px), (min-width: 1100px) {
+    
 body {
     font-family: Arial, sans-serif;
+}
 }
 
 header {
@@ -56,14 +59,14 @@ header {
 
 
 nav {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem;
+    padding: 0.1rem;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .nav-links {
@@ -73,7 +76,7 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .nav-links a {
@@ -87,7 +90,7 @@ nav {
 }
 
 .menu-toggle {
-    display: none;
+    display: none ;
     flex-direction: column;
     cursor: pointer;
 }
@@ -101,6 +104,27 @@ nav {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Add toggle styles for screen sizes below 600px */
+@media (max-width: 599px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -184,9 +208,13 @@ img {
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+    color:black;
+    box-shadow: 0px 0px 15px cyan;
 }
 
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    color: #e60c0c;
+
 }
