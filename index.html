@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styling.css">
+    <title>Flyers / Branding</title>
+    <link rel="stylesheet" href="styling2.css">
 
+<style>
+    body {
+        background-color: rgb(171, 130, 130); /* Change to your desired color */
+    }
+</style>
 
 </head>
+
 <body>
+
     <header>
-    <nav>
-        <div class="logo"></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Main Page</a></li>
+        <nav>
+            <div class="logo"></div>
+            <ul class="nav-links">
+            <li><a href="main2.html">Main Page</a></li>
             <li><a href="page1.html">Logo Designs</a></li>
-            <li><a href="page2.html">Flyers & Branding Designs</a></li>
             <li><a href="contact.html">Contact Information</a></li>
-        </ul>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">
-    <div class="scrolling-container">
-        <ul class="scrollpara">
-            <p class="slide-in-text">
-                <b><i>PORTFOLIO </i></b><br>
-                As a passionate and detailed-orientated graphic designer,<br>
-                I specialize visual experiences that connect, inspire, and drive results.<br>
-                With over 5 years of experience spanning brand identity, digital design,<br>
-                and print media, I approach each project as an opportunity to solve<br>
-                problems through thoughtful, strategic design.<br>
-                I'm currently available for freelance projects and potential full-time opportunities.
-            </p>
-        </ul>
-            <img class="head" src="UriahJapan.jpg" alt="3D Logo">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide fade">
+                <img src="Flyer2.jpg" alt="Spice Flyer">
+            </div>
+            <div class="slide fade">
+                <img src="paperbagMD.jpg" alt="Paper Bag">
+            </div>
+            <div class="slide fade">
+                <img src="Reptile_Expo_4.jpg" alt="Expo">
+            </div>
+            <div class="slide fade">
+                <img class="khan" src="KhansA5.jpg" alt="Image 4">
+            </div>
+
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
-    </div>
 
+    <script src="nice.js"></script>
 
-
-    
-<script src="nice.js"></script>
 </body>
+
 </html>
